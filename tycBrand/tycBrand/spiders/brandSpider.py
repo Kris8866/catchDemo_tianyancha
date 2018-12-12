@@ -19,17 +19,10 @@ class BrandspiderSpider(scrapy.Spider):
         start_urls.append(url)
 
     print(start_urls)
-
-    cookies = {'TYCID': 'c29d583093b711e880e961da90bdb2b0', 'undefined': 'c29d583093b711e880e961da90bdb2b0',
-               '_ga': 'GA1.2.1570836327.1532927824', 'ssuid': '2646539681', 'jsid': 'SEM-BAIDU-CG-SY-029717',
-               '_gid': 'GA1.2.1050111427.1543908815', 'RTYCID': '7b8512ef821a4341aca4f4773b5829b1',
-               'CT_TYCID': 'fad4588c8bd34b76971363078a98e139',
-               'tyc-user-info': '%257B%2522myQuestionCount%2522%253A%25220%2522%252C%2522integrity%2522%253A%25220%2525%2522%252C%2522state%2522%253A%25220%2522%252C%2522vipManager%2522%253A%25220%2522%252C%2522onum%2522%253A%25220%2522%252C%2522monitorUnreadCount%2522%253A%25220%2522%252C%2522discussCommendCount%2522%253A%25220%2522%252C%2522token%2522%253A%2522eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTY1OTgxMzc2MiIsImlhdCI6MTU0Mzk5MDA4OCwiZXhwIjoxNTU5NTQyMDg4fQ.pr2a-0dp-V9OtVSS4H7D4QDn3sw5OPG_zeapLxCe8ZXJu43ORg8_GnfNJj9KkULwOrqool9zgAqUqiQ7lUMobQ%2522%252C%2522redPoint%2522%253A%25220%2522%252C%2522pleaseAnswerCount%2522%253A%25220%2522%252C%2522vnum%2522%253A%25220%2522%252C%2522bizCardUnread%2522%253A%25220%2522%252C%2522mobile%2522%253A%252215659813762%2522%257D',
-               'auth_token': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTY1OTgxMzc2MiIsImlhdCI6MTU0Mzk5MDA4OCwiZXhwIjoxNTU5NTQyMDg4fQ.pr2a-0dp-V9OtVSS4H7D4QDn3sw5OPG_zeapLxCe8ZXJu43ORg8_GnfNJj9KkULwOrqool9zgAqUqiQ7lUMobQ',
-               'cloud_token': 'eba211b3f3f749a0813a28ec00920155',
-               'Hm_lvt_e92c8d65d92d534b0fc290df538b4758': '1543988947,1543988962,1543988996,1543994979',
-               'Hm_lpvt_e92c8d65d92d534b0fc290df538b4758': '1543994979',
-               '_gat_gtag_UA_123487620_1': '1'}  # 带着Cookie向网页发请求
+    
+    # 带着Cookie向网页发请求
+    # 放入cookie    
+    cookies = {} 
 
     headers = {
         'Connection': 'keep - alive',  # 保持链接状态
